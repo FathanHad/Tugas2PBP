@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Tugas 3 Assignment PBP/PBD</h1>
+
+<h2>Nama: <span class="bold">{{nama}}</span></h2>
+
+<h2>Student ID: <span class="bold">{{student_id}}</span></h2>
+
+
+<style>
+
+</style>
+<table>
+    <tr>
+        <th>Pernah Ditonton</th>
+        <th>Judul Film</th>
+        <th>Rating Film</th>
+        <th>Tanggal Rilis</th>
+        <th>Review Film</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for film in list_film %}
+    <tr>
+        <th>{{film.watched}}</th>
+        <th>{{film.title}}</th>
+        <th>{{film.rating}}</th>
+        <th>{{film.release_date}}</th>
+        <th>{{film.review}}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+{% if "sudah" in film.watched >= "belum" in film.watched %}
+    <b>Wah, kamu masih sedikit menonton!</b>    
+{% else %}
+    <b>Selamat, kamu sudah banyak menonton!</b>
+{% endif %}
+
+{% endblock content %}

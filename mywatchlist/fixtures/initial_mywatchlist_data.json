@@ -1,0 +1,113 @@
+[
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 1,
+        "fields": {
+            "watched": "sudah",
+            "title": "The Shawshank Redemption",
+            "rating": 5,
+            "release_date": "22 September 1994",
+            "review": "I have never seen such an amazing film since I saw The Shawshank Redemption. Shawshank encompasses friendships, hardships, hopes, and dreams. And what is so great about the movie is that it moves you, it gives you hope. Even though the circumstances between the characters and the viewers are quite different, you don't feel that far removed from what the characters are going through. You will finally understand what everyone is talking about and you will understand why this is my all time favorite movie."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 2,
+        "fields": {
+            "watched": "sudah",
+            "title": "Interstellar",
+            "rating": 5,
+            "release_date": "6 November 2014",
+            "review": "'Interstellar (2014)' is a space-epic that feels remarkably intimate and emotionally resonant while also being sweeping in scope and visually stunning. The mixture of earthy textures and sleek sci-fi aesthetics makes for an interesting visual juxtaposition between the two sets of characters. While its third act does get a little existential and abstract, the narrative reasoning behind it and scientific integrity leading up to it allows for constant believability. This film never fails to have an impact on me, it is truly breathtaking work. In fact, it is one of my favourite pictures of all time. 10/10"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 3,
+        "fields": {
+            "watched": "belum",
+            "title": "The Godfather",
+            "rating": 5,
+            "release_date": "24 Maret 1972",
+            "review": "This isn't just a beautifully crafted gangster film. Or an outstanding family portrait, for that matter. An amazing period piece. A character study. A lesson in filmmaking and an inspiration to generations of actors, directors, screenwriters and producers. For me, this is more: this is the definitive film. 10 stars out of 10."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 4,
+        "fields": {
+            "watched": "belum",
+            "title": "Pulp Fiction",
+            "rating": 5,
+            "release_date": "14 Oktober 1994",
+            "review": "Pulp Fiction is the most original, rule breaking film I have ever seen. Instead of following the widely used 3 act structure, Pulp Fiction makes up its own and while the 3 stories may seem completely disconnected at first, once you look closely you can find the underlying themes that they all share. Anyone who says that the movie lacks focus or has no meaning hasn't analysed enough. I highly recommend this film since it is number one on my list of my favourite movies of all time."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 5,
+        "fields": {
+            "watched": "sudah",
+            "title": "Thor: The Dark World",
+            "rating": 3.5,
+            "release_date": "8 November 2013",
+            "review": "I have no words except the plot is horrible and so is the villain. I can't remember a single thing about Malekith except that he's a dark elf and wants the aether. This is the worst in the mcu."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 6,
+        "fields": {
+            "watched": "sudah",
+            "title": "Pengabdi Setan",
+            "rating": 4.5,
+            "release_date": "28 September 2017",
+            "review": "Secara keseluruhan film ini terasa sekali suasana horornya, sinematografinya terlihat sangat apik. Jumpscare sering dijumpai dari awal film hingga penghabisan. Acting dari masing-masing pemain sangat dihayati perannya. Disisipkan beberapa adegan humor yang mengundang gelak tawa penonton, sehingga tidak selalu adegan yang mengundang ketakutan saja. Film ini mendapat respon baik dari masyarakat, dan mendapat rating IMDb sebesar 8,3/10."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 7,
+        "fields": {
+            "watched": "sudah",
+            "title": "Ghost Writer",
+            "rating": 4,
+            "release_date": "4 Juni 2019",
+            "review": "What a funny ghost movie, I loved it. but in the end, this movie turning into emotional"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 8,
+        "fields": {
+            "watched": "sudah",
+            "title": "Toy Story 4",
+            "rating": 4.5,
+            "release_date": "21 Juni 2019",
+            "review": "Toy Story 4 is truly amazing. It's a masterpiece. All the toy stories are great but this one far exceeded my expectations and is on the Nr.1 spot of favourite animation movie of all time. It really plays into your emotions. Must See."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 9,
+        "fields": {
+            "watched": "belum",
+            "title": "Rafathar",
+            "rating": 0.1,
+            "release_date": "5 Agustus 2017",
+            "review": "Rafathar adalah aktor yang sangat berbakat, tetapi lebih baik bakatnya dipendam"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistmovies",
+        "pk": 10,
+        "fields": {
+            "watched": "belum",
+            "title": "Ashiap Man",
+            "rating": 0.4,
+            "release_date": "10 Februari 2022",
+            "review": "Atta Sebaiknya fokus menjadi youtuber saja"
+        }
+    }
+
+]
