@@ -5,10 +5,19 @@ from mywatchlist.models import WatchlistMovies
 # Create your views here.
 def show_mywatchlist(request):
     data_film_mywatchlist = WatchlistMovies.objects.all()
+    counter = 0
+    for movie in data_film_mywatchlist:
+        if(movie.is_watched == "sudah"):
+            counter+=1
+    if(counter < 10 - counter):
+        pesan = "Wah, kamu masih sedikit menonton!"
+    else:
+        pesan = "Selamat, kamu sudah banyak menonton!"
     context = {
         'list_film': data_film_mywatchlist,
         'nama': 'Fathan Hadyan',
-        'student_id':'2106751940'
+        'student_id':'2106751940',
+        'message': pesan
     }
     return render(request, "mywatchlist.html", context)
 

@@ -8,6 +8,7 @@
 
 <h2>Student ID: <span class="bold">{{student_id}}</span></h2>
 
+<h2>Pesan : <span class="bold">{{message}}</span></h2>
 
 <style>
 
@@ -23,7 +24,7 @@
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for film in list_film %}
     <tr>
-        <th>{{film.watched}}</th>
+        <th>{{film.is_watched}}</th>
         <th>{{film.title}}</th>
         <th>{{film.rating}}</th>
         <th>{{film.release_date}}</th>
@@ -32,10 +33,6 @@
     {% endfor %}
 </table>
 
-{% if "sudah" in film.watched >= "belum" in film.watched %}
-    <b>Wah, kamu masih sedikit menonton!</b>    
-{% else %}
-    <b>Selamat, kamu sudah banyak menonton!</b>
-{% endif %}
+
 
 {% endblock content %}
