@@ -8,30 +8,30 @@
 
 <h2>Student ID: <span class="bold">{{student_id}}</span></h2>
 
-<h2>Pesan : <span class="bold">{{message}}</span></h2>
-
 <style>
-
+ table tr {background-color:#25316D; color:#8758FF; border-color: #003865;}
 </style>
-<table>
-    <tr>
-        <th>Pernah Ditonton</th>
-        <th>Judul Film</th>
-        <th>Rating Film</th>
-        <th>Tanggal Rilis</th>
-        <th>Review Film</th>
+<table style="width:100%; border: 10px">
+    <tr style="height:50px">
+        <th><h2>Pernah Ditonton</h2></th>
+        <th><h2>Judul Film</h2></th>
+        <th><h2>Rating Film</h2></th>
+        <th><h2>Tanggal Rilis</h2></th>
+        <th><h2>Review Film</h2></th>
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for film in list_film %}
-    <tr>
-        <th>{{film.is_watched}}</th>
-        <th>{{film.title}}</th>
-        <th>{{film.rating}}</th>
-        <th>{{film.release_date}}</th>
-        <th>{{film.review}}</th>
-    </tr>
+    <tr style="height:50px">
+        <th><h3><p style="font-family: sans-serif">{{film.is_watched}}</p></h3></th>
+        <th><h3><p style="font-family: sans-serif">{{film.title}}</p></h3></th>
+        <th><h3><p style="font-family: sans-serif">{{film.rating}}</p></h3></th>        
+        <th><h3><p style="font-family: sans-serif">{{film.release_date}}</p></h3></th>        
+        <th><h3><p style="font-family: sans-serif">{{film.review}}</p></h3></th>
+        </tr>
     {% endfor %}
 </table>
+
+<h1 style="text-align:center; font-family: sans-serif; color:#0F3D3E"><span class="bold">{{message}}</span></h1>
 
 
 
