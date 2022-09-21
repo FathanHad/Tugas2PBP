@@ -1,17 +1,2 @@
-table,th{
-    border: 1px solid black;
-}
-
-.bold {
-    font-weight: bolder;
-}
-
-  tr:hover {background-color: #ABD9FF;}
 
 
-html {
-    height: 100%;
-    }
-    body {
-    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
-    }
