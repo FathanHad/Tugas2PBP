@@ -4,7 +4,7 @@ from django.urls import resolve
 
 class AppTest(TestCase):
     def test_url_html(self):
-        response = Client().get('https://tugas2pbpfathan.herokuapp.com/mywatchlist/xml/')
+        response = Client().get('https://tugas2pbpfathan.herokuapp.com/mywatchlist/html/')
         self.assertEqual(response.status_code,200)
 
     def test_url_xml(self):
