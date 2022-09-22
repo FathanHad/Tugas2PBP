@@ -1,4 +1,11 @@
 # TUGAS 3 PBP
+
+link HEROKU:
+- https://tugas2pbpfathan.herokuapp.com/mywatchlist/html/
+- https://tugas2pbpfathan.herokuapp.com/mywatchlist/json/
+- https://tugas2pbpfathan.herokuapp.com/mywatchlist/xml/
+
+
 ### Perbedaan JSON, XML, HTML
 
 1. Definisi    
