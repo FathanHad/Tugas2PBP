@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center style="color:#0F3D3E">
+    <h1>Tugas 4 Assignment PBP/PBD</h1>
+    <h1>TODOLIST</h1>
+    <h1><b>USER: {{user}}</b></h1>
+</center>
+
+
+<table style="width:100%; border: 10px;">
+    <tr style="height:50px; color:#25316D; background-color:#8758FF; font-family: sans-serif;">
+        <th><h2>Tanggal Pembuatan</h2></th>
+        <th><h2>Judul</h2></th>
+        <th><h2>Deskripsi</h2></th>
+        <th><h2>Status</h2></th>
+        <th><h2>Update</h2></th>
+        <th><h2>Delete</h2></th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for list in list_todolist %}
+    <tr style="height:50px; font-family: sans-serif;">
+        <td><h2>{{list.date}}</h2></td>
+        <td><h2>{{list.title}}</h2></td>
+        <td><h2>{{list.description}}</h2></td>
+        {% if list.is_finished == False %}
+        <td><h2>Selesai</h2></td>
+        {% else %}
+          <td><h2>Belum Selesai</h2></td>
+        {% endif %}
+        <td><button><a href="{% url 'todolist:update-task' list.id %}">Update Task</a></button></td>
+        <td><button><a href="{% url 'todolist:delete-task' list.id %}">Delete Task</a></button></td>
+    </tr>
+{% endfor %}
+</table>
+
+<button><a href="{% url 'todolist:create-task' %}">Tambah Task Baru</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+{% endblock content %}
