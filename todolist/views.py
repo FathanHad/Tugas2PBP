@@ -24,7 +24,6 @@ def show_todolist(request):
     context = {
         'list_todolist': data_todolist,
         'nama': 'Fathan Hadyan',
-        'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
 
