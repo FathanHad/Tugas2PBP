@@ -30,10 +30,10 @@
             <h1><b>USER: {{user}}</b></h1>
         </center>
     </div>
-    <div class="row">
-        <div class="col-md-4">
+        <div class="mx-3 d-flex flex-row flex-wrap justify-content-center"> >
+
             {% for list in list_todolist %}
-            <div class="card text-white bg-secondary mb-3 card text-center">
+            <div class="card text-white bg-primary m-2 card text-center">
                     <div class="card-body mb-4">
                         <h4 class="card-title">{{list.title}}</h4>
                         <p> Date : {{list.date}} </p>
@@ -52,6 +52,7 @@
                     </div>
             </div>
             {% endfor %}
+        </div>
         
 
 {% endblock content %}
