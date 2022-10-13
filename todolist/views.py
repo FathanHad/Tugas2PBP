@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.shortcuts import render
 from todolist.forms import taskForm
 from todolist.models import Task
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest, HttpResponseNotFound
 from django.core import serializers
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -18,6 +18,23 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 ...
 # Create your views here.
+
+def get_todolist_json(request):
+    todolist_item = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', todolist_item))
+
+def add_todolist_item(request):
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+
+        new_todolist = Task(user=request.user, title=title, description=description, date=datetime.datetime.now(), is_finished=False)
+        new_todolist.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
+
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
     data_todolist = Task.objects.filter(user=request.user)
